@@ -1,12 +1,15 @@
+import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import HeaderBar from '../Header/Header';
+import { Body } from './styles';
 
 function Layout() {
   return (
-    <>
-      <Header />
+    <Body>
+      <HeaderBar />
+      <Outlet />
       <Footer />
-    </>
+    </Body>
   );
 }
 

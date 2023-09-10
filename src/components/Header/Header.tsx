@@ -1,7 +1,16 @@
-function Header() {
+import Brand from './Brand/Brand';
+import InputSearch from './InputSearch/InputSearch';
+import NavBar from './NavBar/NavBar';
+import { Header } from './styles';
+
+function HeaderBar() {
   return (
-    <div>Header</div>
+    <Header>
+      <Brand brand="Brand" />
+      <InputSearch />
+      <NavBar />
+    </Header>
   );
 }
 
-export default Header;
+export default HeaderBar;
