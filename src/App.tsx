@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
+import { ApiProducts } from './service/ApiProducts';
+import { ApiUsers } from './service/ApiUsers';
 
 function App() {
   // utilize styled.{tag que deve ser renderizada} para escolher qual elemento HTML você quer renderizar
@@ -10,6 +13,11 @@ function App() {
       background-color: #022c16;
       margin-bottom: 3em;
   `;
+
+  useEffect(() => {
+    ApiProducts();
+    ApiUsers();
+  }, []);
 
   // adicione os estilos CSS entre as crases ``
   const Container = styled.div`
