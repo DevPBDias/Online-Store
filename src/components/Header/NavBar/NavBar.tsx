@@ -3,23 +3,24 @@ import profile from '../../../assets/Profile.png';
 import cart from '../../../assets/Cart.png';
 import message from '../../../assets/Message.png';
 import orders from '../../../assets/Orders.png';
+import { Container, Image } from './styles';
 
 function NavBar() {
   return (
-    <div>
+    <Container>
       <Link to="/profile">
-        <img src={ profile } alt="" />
+        <Image src={ profile } alt="" />
       </Link>
       <Link to="/cart">
-        <img src={ cart } alt="" />
+        <Image src={ message } alt="" />
       </Link>
       <Link to="/message">
-        <img src={ message } alt="" />
+        <Image src={ orders } alt="" />
       </Link>
       <Link to="/orders">
-        <img src={ orders } alt="" />
+        <Image src={ cart } alt="" />
       </Link>
-    </div>
+    </Container>
   );
 }
 

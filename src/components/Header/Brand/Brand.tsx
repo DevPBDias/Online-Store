@@ -1,4 +1,5 @@
 import Logo from '../../../assets/Logo.png';
+import { Container, Image, Title } from './styles';
 
 type BrandProps = {
   brand: string
@@ -6,10 +7,10 @@ type BrandProps = {
 
 function Brand({ brand }: BrandProps) {
   return (
-    <div>
-      <img src={ Logo } alt="Logo" />
-      <h1>{brand}</h1>
-    </div>
+    <Container>
+      <Image src={ Logo } alt="Logo" />
+      <Title>{brand}</Title>
+    </Container>
   );
 }
 

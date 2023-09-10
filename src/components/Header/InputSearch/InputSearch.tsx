@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, SearchBar, SearchBtn } from './styles';
 
 function InputSearch() {
   const [userSearch, setUserSearch]: any = useState();
@@ -13,20 +14,20 @@ function InputSearch() {
   }
 
   return (
-    <div>
-      <input
+    <Container>
+      <SearchBar
         type="text"
         placeholder="Search"
         value={ userSearch }
-        onChange={ handleChange }
+        onChange={ () => handleChange }
       />
-      <button
+      <SearchBtn
         type="button"
-        onClick={ handleClick }
+        onClick={ () => handleClick }
       >
         Search
-      </button>
-    </div>
+      </SearchBtn>
+    </Container>
   );
 }
 
